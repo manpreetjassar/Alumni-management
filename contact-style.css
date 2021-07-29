@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 100%;
+    background: url(pic1.jpg) no-repeat;
+    background-size: cover;
+}
+.input-group input::placeholder, .input-group button{
+    font-size: small;
+}
+.input-group button:hover{
+    background-color: rgb(235, 28, 62);
+    transition: all 0.5s ease;
+}
+.nav-item a{
+    font-size: small;
+    border-right: 0.5px black solid;
+}
+#collapsibleNavbar .navbar-nav li:nth-child(5){
+    background-color: rgb(235, 28, 62);
+} 
+.navbar-nav li:nth-child(n):hover{
+    background-color: rgb(235, 28, 62);
+    transition: all 0.5s ease;
+} 
+#sec .nav-item a i{
+    font-size: 1.1rem;
+}
+#sec li:nth-child(1) a{
+    border-left: 0.5px black solid;
+}
+.next{
+    background-color: gainsboro;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.01));
+}
+hr{
+    border: 0.5px solid white;
+}
+.last a{
+    color: rgb(235, 28, 62);
+}
+.last a:hover{
+    text-decoration: none;
+    color: black;
+}
+.last form input:focus{
+    border: 1px solid rgb(235, 28, 62);
+}
+.next .btn{
+    font-size: small;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 45px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px rgb(235, 28, 62) solid;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    transition: all 0.3s ease;
+} 
+.next .btn::before{
+    background: rgb(235, 28, 62);
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+.next .btn:hover::before{
+    height: 280%;
+}
+.next .btn:hover{
+    color: white;
+}
+.page-footer{
+    padding: 50px;
+    margin-bottom: 0;
+}
